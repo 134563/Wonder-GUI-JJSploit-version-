@@ -1,0 +1,1052 @@
+-- Gui to Lua
+
+
+-- Version: 3.2
+
+
+
+-- Instances:
+
+
+
+local ui = Instance.new("ScreenGui")
+
+
+local Frame = Instance.new("Frame")
+
+
+local UICorner = Instance.new("UICorner")
+
+
+local Title = Instance.new("TextLabel")
+
+
+local Stick = Instance.new("Frame")
+
+
+local Close = Instance.new("TextButton")
+
+
+local Icon = Instance.new("ImageLabel")
+
+
+local Home = Instance.new("TextButton")
+
+
+local UICorner_2 = Instance.new("UICorner")
+
+
+local Scripts = Instance.new("TextButton")
+
+
+local UICorner_3 = Instance.new("UICorner")
+
+
+local Settings = Instance.new("TextButton")
+
+
+local UICorner_4 = Instance.new("UICorner")
+
+
+local SettingsTab = Instance.new("Frame")
+
+
+local UICorner_5 = Instance.new("UICorner")
+
+
+local ShadowsControl = Instance.new("TextButton")
+
+
+local UICorner_6 = Instance.new("UICorner")
+
+
+local ScriptsTab = Instance.new("Frame")
+
+
+local UICorner_7 = Instance.new("UICorner")
+
+
+local LegendOfSpeed = Instance.new("TextLabel")
+
+
+local Description = Instance.new("TextLabel")
+
+
+local Execute1 = Instance.new("TextButton")
+
+
+local ImageLabel = Instance.new("ImageLabel")
+
+
+local Execute2 = Instance.new("TextButton")
+
+
+local ImageLabel_2 = Instance.new("ImageLabel")
+
+
+local UTG = Instance.new("TextLabel")
+
+
+local Description2 = Instance.new("TextLabel")
+
+
+local HomeTab = Instance.new("Frame")
+
+
+local UICorner_8 = Instance.new("UICorner")
+
+
+local TextLabel = Instance.new("TextLabel")
+
+
+local TextLabel_2 = Instance.new("TextLabel")
+
+
+local TextLabel_3 = Instance.new("TextLabel")
+
+
+local Open = Instance.new("TextButton")
+
+
+local UICorner_9 = Instance.new("UICorner")
+
+
+
+--Properties:
+
+
+
+ui.Name = "ui"
+
+
+ui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+
+
+Frame.Parent = ui
+
+
+Frame.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+
+
+Frame.BorderSizePixel = 0
+
+
+Frame.Position = UDim2.new(0.100320168, 0, 0.131362885, 0)
+
+
+Frame.Size = UDim2.new(0, 671, 0, 355)
+
+
+
+UICorner.CornerRadius = UDim.new(0, 10)
+
+
+UICorner.Parent = Frame
+
+
+
+Title.Name = "Title"
+
+
+Title.Parent = Frame
+
+
+Title.BackgroundColor3 = Color3.fromRGB(11, 11, 11)
+
+
+Title.BackgroundTransparency = 1.000
+
+
+Title.BorderSizePixel = 0
+
+
+Title.Size = UDim2.new(0, 671, 0, 50)
+
+
+Title.Font = Enum.Font.Jura
+
+
+Title.Text = "Wonder Gui"
+
+
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Title.TextSize = 40.000
+
+
+
+Stick.Name = "Stick"
+
+
+Stick.Parent = Frame
+
+
+Stick.BackgroundColor3 = Color3.fromRGB(218, 218, 218)
+
+
+Stick.BorderColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Stick.Position = UDim2.new(0, 0, 0.140845075, 0)
+
+
+Stick.Size = UDim2.new(0, 671, 0, 0)
+
+
+
+Close.Name = "Close"
+
+
+Close.Parent = Frame
+
+
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Close.BackgroundTransparency = 1.000
+
+
+Close.BorderSizePixel = 0
+
+
+Close.Position = UDim2.new(0.925484359, 0, 0, 0)
+
+
+Close.Size = UDim2.new(0, 50, 0, 50)
+
+
+Close.Font = Enum.Font.SciFi
+
+
+Close.Text = "X"
+
+
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Close.TextSize = 30.000
+
+
+
+Icon.Name = "Icon"
+
+
+Icon.Parent = Frame
+
+
+Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Icon.BackgroundTransparency = 1.000
+
+
+Icon.BorderSizePixel = 0
+
+
+Icon.Position = UDim2.new(0.0283159483, 0, 0.00845070463, 0)
+
+
+Icon.Size = UDim2.new(0, 42, 0, 43)
+
+
+Icon.Image = "http://www.roblox.com/asset/?id=8756129246"
+
+
+
+Home.Name = "Home"
+
+
+Home.Parent = Frame
+
+
+Home.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+
+
+Home.BorderSizePixel = 0
+
+
+Home.Position = UDim2.new(0.0163934417, 0, 0.202816904, 0)
+
+
+Home.Size = UDim2.new(0, 168, 0, 50)
+
+
+Home.Font = Enum.Font.Jura
+
+
+Home.Text = "Home"
+
+
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Home.TextSize = 20.000
+
+
+
+UICorner_2.Parent = Home
+
+
+
+Scripts.Name = "Scripts"
+
+
+Scripts.Parent = Frame
+
+
+Scripts.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+
+
+Scripts.BorderSizePixel = 0
+
+
+Scripts.Position = UDim2.new(0.0163934417, 0, 0.428169012, 0)
+
+
+Scripts.Size = UDim2.new(0, 168, 0, 50)
+
+
+Scripts.Font = Enum.Font.Jura
+
+
+Scripts.Text = "Scripts"
+
+
+Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Scripts.TextSize = 20.000
+
+
+
+UICorner_3.Parent = Scripts
+
+
+
+Settings.Name = "Settings"
+
+
+Settings.Parent = Frame
+
+
+Settings.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+
+
+Settings.BorderSizePixel = 0
+
+
+Settings.Position = UDim2.new(0.0163934417, 0, 0.659154892, 0)
+
+
+Settings.Size = UDim2.new(0, 168, 0, 50)
+
+
+Settings.Font = Enum.Font.Jura
+
+
+Settings.Text = "Settings"
+
+
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Settings.TextSize = 20.000
+
+
+
+UICorner_4.Parent = Settings
+
+
+
+SettingsTab.Name = "SettingsTab"
+
+
+SettingsTab.Parent = Frame
+
+
+SettingsTab.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+
+
+SettingsTab.BorderSizePixel = 0
+
+
+SettingsTab.Position = UDim2.new(0.299552917, 0, 0.202816904, 0)
+
+
+SettingsTab.Size = UDim2.new(0, 420, 0, 212)
+
+
+
+UICorner_5.Parent = SettingsTab
+
+
+
+ShadowsControl.Name = "ShadowsControl"
+
+
+ShadowsControl.Parent = SettingsTab
+
+
+ShadowsControl.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+
+
+ShadowsControl.BorderSizePixel = 0
+
+
+ShadowsControl.Position = UDim2.new(0.261904776, 0, 0.0613207519, 0)
+
+
+ShadowsControl.Size = UDim2.new(0, 200, 0, 50)
+
+
+ShadowsControl.Font = Enum.Font.Jura
+
+
+ShadowsControl.Text = "Shadows: On"
+
+
+ShadowsControl.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+ShadowsControl.TextSize = 16.000
+
+
+
+UICorner_6.Parent = ShadowsControl
+
+
+
+ScriptsTab.Name = "ScriptsTab"
+
+
+ScriptsTab.Parent = Frame
+
+
+ScriptsTab.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+
+
+ScriptsTab.BorderSizePixel = 0
+
+
+ScriptsTab.Position = UDim2.new(0.299369991, 0, 0.202548623, 0)
+
+
+ScriptsTab.Size = UDim2.new(0, 420, 0, 212)
+
+
+
+UICorner_7.Parent = ScriptsTab
+
+
+
+LegendOfSpeed.Name = "Legend Of Speed"
+
+
+LegendOfSpeed.Parent = ScriptsTab
+
+
+LegendOfSpeed.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+
+
+LegendOfSpeed.BorderColor3 = Color3.fromRGB(24, 24, 24)
+
+
+LegendOfSpeed.Position = UDim2.new(0.0547619089, 0, 0.0613207556, 0)
+
+
+LegendOfSpeed.Size = UDim2.new(0, 113, 0, 37)
+
+
+LegendOfSpeed.Font = Enum.Font.Highway
+
+
+LegendOfSpeed.Text = "Legend Of Speed"
+
+
+LegendOfSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+LegendOfSpeed.TextSize = 13.000
+
+
+LegendOfSpeed.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+
+
+Description.Name = "Description"
+
+
+Description.Parent = ScriptsTab
+
+
+Description.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+
+
+Description.BorderColor3 = Color3.fromRGB(24, 24, 24)
+
+
+Description.Position = UDim2.new(0.0547619052, 0, 0.235849053, 0)
+
+
+Description.Size = UDim2.new(0, 113, 0, 104)
+
+
+Description.Font = Enum.Font.Highway
+
+
+Description.Text = "Farm"
+
+
+Description.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Description.TextSize = 19.000
+
+
+
+Execute1.Name = "Execute1"
+
+
+Execute1.Parent = ScriptsTab
+
+
+Execute1.BackgroundColor3 = Color3.fromRGB(8, 255, 86)
+
+
+Execute1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Execute1.Position = UDim2.new(0.323809534, 0, 0.0613207556, 0)
+
+
+Execute1.Size = UDim2.new(0, 59, 0, 141)
+
+
+Execute1.Font = Enum.Font.SourceSans
+
+
+Execute1.Text = "Execute"
+
+
+Execute1.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Execute1.TextSize = 14.000
+
+
+
+ImageLabel.Parent = Execute1
+
+
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+ImageLabel.BackgroundTransparency = 1.000
+
+
+ImageLabel.Position = UDim2.new(0.101694912, 0, 0.297872335, 0)
+
+
+ImageLabel.Size = UDim2.new(0, 50, 0, 56)
+
+
+ImageLabel.Image = "http://www.roblox.com/asset/?id=2038928570"
+
+
+
+Execute2.Name = "Execute2"
+
+
+Execute2.Parent = ScriptsTab
+
+
+Execute2.BackgroundColor3 = Color3.fromRGB(8, 255, 86)
+
+
+Execute2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Execute2.Position = UDim2.new(0.802380919, 0, 0.0613207556, 0)
+
+
+Execute2.Size = UDim2.new(0, 59, 0, 141)
+
+
+Execute2.Font = Enum.Font.SourceSans
+
+
+Execute2.Text = ""
+
+
+Execute2.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+Execute2.TextSize = 14.000
+
+
+
+ImageLabel_2.Parent = Execute2
+
+
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+ImageLabel_2.BackgroundTransparency = 1.000
+
+
+ImageLabel_2.Position = UDim2.new(0.152542368, 0, 0.297872335, 0)
+
+
+ImageLabel_2.Size = UDim2.new(0, 50, 0, 56)
+
+
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=2038928570"
+
+
+
+UTG.Name = "UTG"
+
+
+UTG.Parent = ScriptsTab
+
+
+UTG.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+
+
+UTG.BorderColor3 = Color3.fromRGB(24, 24, 24)
+
+
+UTG.Position = UDim2.new(0.533333302, 0, 0.0613207556, 0)
+
+
+UTG.Size = UDim2.new(0, 113, 0, 37)
+
+
+UTG.Font = Enum.Font.Highway
+
+
+UTG.Text = "UTG"
+
+
+UTG.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+UTG.TextSize = 14.000
+
+
+
+Description2.Name = "Description2"
+
+
+Description2.Parent = ScriptsTab
+
+
+Description2.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+
+
+Description2.BorderColor3 = Color3.fromRGB(24, 24, 24)
+
+
+Description2.Position = UDim2.new(0.533333302, 0, 0.235849053, 0)
+
+
+Description2.Size = UDim2.new(0, 113, 0, 104)
+
+
+Description2.Font = Enum.Font.Highway
+
+
+Description2.Text = "Trolling Lol."
+
+
+Description2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Description2.TextSize = 14.000
+
+
+
+HomeTab.Name = "HomeTab"
+
+
+HomeTab.Parent = Frame
+
+
+HomeTab.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+
+
+HomeTab.BorderSizePixel = 0
+
+
+HomeTab.Position = UDim2.new(0.299552917, 0, 0.202816844, 0)
+
+
+HomeTab.Size = UDim2.new(0, 420, 0, 212)
+
+
+
+UICorner_8.Parent = HomeTab
+
+
+
+TextLabel.Parent = HomeTab
+
+
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+TextLabel.BackgroundTransparency = 1.000
+
+
+TextLabel.Position = UDim2.new(0, 0, 0.0283018872, 0)
+
+
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+
+
+TextLabel.Font = Enum.Font.Jura
+
+
+TextLabel.Text = "Welcome!"
+
+
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+TextLabel.TextSize = 40.000
+
+
+
+TextLabel_2.Parent = HomeTab
+
+
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+TextLabel_2.BackgroundTransparency = 1.000
+
+
+TextLabel_2.Position = UDim2.new(0.228571445, 0, 0.202830166, 0)
+
+
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+
+
+TextLabel_2.Font = Enum.Font.Jura
+
+
+TextLabel_2.Text = "Thanks for using The Wonder Gui"
+
+
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+TextLabel_2.TextSize = 27.000
+
+
+
+TextLabel_3.Parent = Frame
+
+
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+TextLabel_3.BackgroundTransparency = 1.000
+
+
+TextLabel_3.Position = UDim2.new(0.0163934417, 0, 0.836619735, 0)
+
+
+TextLabel_3.Size = UDim2.new(0, 660, 0, 58)
+
+
+TextLabel_3.Font = Enum.Font.Highway
+
+
+TextLabel_3.Text = "Credits: GoldGowd#0985 (Ui),  Blukez  (UTG),  Devil Script (Legend Of Speed)"
+
+
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+TextLabel_3.TextSize = 17.000
+
+
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+
+
+Open.Name = "Open"
+
+
+Open.Parent = ui
+
+
+Open.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+
+
+Open.BorderSizePixel = 0
+
+
+Open.Position = UDim2.new(0.832443953, 0, 0.906403959, 0)
+
+
+Open.Size = UDim2.new(0, 149, 0, 50)
+
+
+Open.Font = Enum.Font.Jura
+
+
+Open.Text = "Open"
+
+
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+Open.TextSize = 20.000
+
+
+
+UICorner_9.Parent = Open
+
+
+
+-- Scripts:
+
+
+
+local function XPLTQVR_fake_script() -- Close.LocalScript 
+
+
+	local script = Instance.new('LocalScript', Close)
+
+
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+
+		script.Parent.Parent.Visible = false
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(XPLTQVR_fake_script)()
+
+
+local function XOYCFK_fake_script() -- Home.LocalScript 
+
+
+	local script = Instance.new('LocalScript', Home)
+
+
+
+	script.Parent.MouseButton1Down:connect(function()
+
+
+		script.Parent.Parent.HomeTab.Visible = true
+
+
+		script.Parent.Parent.ScriptsTab.Visible = false
+
+
+		script.Parent.Parent.SettingsTab.Visible = false
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(XOYCFK_fake_script)()
+
+
+local function KMWDBJ_fake_script() -- Scripts.LocalScript 
+
+
+	local script = Instance.new('LocalScript', Scripts)
+
+
+
+	script.Parent.MouseButton1Down:connect(function()
+
+
+		script.Parent.Parent.HomeTab.Visible = false
+
+
+		script.Parent.Parent.ScriptsTab.Visible = true
+
+
+		script.Parent.Parent.SettingsTab.Visible = false
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(KMWDBJ_fake_script)()
+
+
+local function FKLA_fake_script() -- Settings.LocalScript 
+
+
+	local script = Instance.new('LocalScript', Settings)
+
+
+
+	script.Parent.MouseButton1Down:connect(function()
+
+
+		script.Parent.Parent.HomeTab.Visible = false
+
+
+		script.Parent.Parent.ScriptsTab.Visible = false
+
+
+		script.Parent.Parent.SettingsTab.Visible = true
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(FKLA_fake_script)()
+
+
+local function RNTVTGP_fake_script() -- ShadowsControl.LocalScript 
+
+
+	local script = Instance.new('LocalScript', ShadowsControl)
+
+
+
+	local shadows = script.Parent.Parent.ShadowsControl
+
+
+	
+
+
+	shadows.MouseButton1Click:Connect(function()
+
+
+		if game.Lighting.GlobalShadows == false then
+
+
+			shadows.Text = 'Shadows: On'
+
+
+			game.Lighting.GlobalShadows = not game.Lighting.GlobalShadows
+
+
+		else
+
+
+			shadows.Text = 'Shadows: Off'
+
+
+			game.Lighting.GlobalShadows = not game.Lighting.GlobalShadows
+
+
+		end
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(RNTVTGP_fake_script)()
+
+
+local function LIQWZPW_fake_script() -- Execute1.LocalScript 
+
+
+	local script = Instance.new('LocalScript', Execute1)
+
+
+
+	script.MouseButton1Down:connect(function()
+
+
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Prajon/DEVIL-loader-remake/main/Legend-Of-Speed", true))()
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(LIQWZPW_fake_script)()
+
+
+local function AJTCKFO_fake_script() -- Execute2.LocalScript 
+
+
+	local script = Instance.new('LocalScript', Execute2)
+
+
+
+	script.MouseButton1Down:connect(function()
+
+
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukez/Scripts/main/UTG%20V3%20RAW"))()
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(AJTCKFO_fake_script)()
+
+
+local function SMFORI_fake_script() -- Open.LocalScript 
+
+
+	local script = Instance.new('LocalScript', Open)
+
+
+
+	local frame = script.Parent.Parent.Frame  -- change “Test” to the name of the frane
+
+
+	local open = false
+
+
+	
+
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+
+		if frame.Visible == false then
+
+
+			frame.Visible = true
+
+
+		end
+
+
+	end)
+
+
+end
+
+
+coroutine.wrap(SMFORI_fake_script)()
+
+
